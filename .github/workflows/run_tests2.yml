@@ -22,7 +22,7 @@ jobs:
       - name: Compile and run tests
         run: |
           # Compila las clases principales
-          javac -d compilados fuentes*.java
+          javac -d compilados fuentes/*.java
 
           # Compila los tests con las dependencias de JUnit
           javac -d compilados -cp "lib/junit-platform-console-standalone-1.14.3.jar:compilados" tests/*.java
